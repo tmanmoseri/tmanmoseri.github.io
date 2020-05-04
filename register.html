@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zensar face recognition app</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i" rel="stylesheet">
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/query.css">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <!-- ################################################################################################ -->
+    <img class="logo" src="images/logo.png" alt="logo">
+     <a class="mobile-nav-icon js--nav-icon"><i class="ion-ios-more"></i></a>
+     <ul class="main-nav js--main-nav">
+
+
+
+    <nav id="mainav">
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">new page</a></li>
+            <li><a href="pages/full-width.html">new page</a></li>
+            <li><a href="pages/sidebar-left.html">new page</a></li>
+            <li><a href="pages/sidebar-right.html">new page</a></li>
+          </ul>
+        </li>
+
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2" style="background-image:url(images/demo/slides/1.png)">
+  <div class="overlay" col-mod="">
+    <!-- ############################################################################################################# -->
+    <div id="intro">
+      <div class="txtblock">
+          <h1 class="uppercase"><span>Zensar Customer Portal </span></h1>
+        <h2 class="nospace push15 uppercase">TEXT HERE</h2>
+
+
+        <!-- #################################################################################################################
+               video console
+
+
+        <div class="imgdiv">
+
+        <div id="console"></div>
+          <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+
+
+
+
+            </div>
+
+            ###################### -->
+
+            <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" value="" class="animate form">
+                            <form  action="index.html" autocomplete="on">
+                                <h1>Log in</h1>
+                                <p>
+                                    <label for="firstname" class="uname" data-icon="u" > Your firstname </label>
+                                    <input id="firstname" name="firstname" required="required" type="text" placeholder="John"/>
+
+                                </p>
+                                <p>
+                                    <label for="ID_Ret" class="ID_Ret" data-icon="p"> Your ID Reg </label>
+                                    <input id="ID_Ret" name="ID_Ret" required="required" type="ID" placeholder="eg. 750607 7575 05 2" />
+                                </p>
+                                <p class="keeplogin">
+                                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                                    <label for="loginkeeping">Keep me logged in</label>
+                                </p>
+                                <p class="login button">
+                                    <input type="submit" value="Login" />
+                                </p>
+                                <p class="change_link">
+                                    Not a member yet ?
+                                    <a href="#toregister" onclick="Fname();display(1)" class="to_register">Register</a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                        <form name="form1" action="index.html" method="POST" autocomplete="on" onsubmit="required()">
+
+                                <p id="1">
+                                    <label id="1" for="Firt_name" class="uname" data-icon="u">First Name</label>
+                                    <input id="1" name="firstName" value="" required="required" type="text" placeholder="John" />
+                                     <button id="1" class="btn-size" type="submit" onclick="required(2)">continue</button>
+
+                                <p id="2">
+                                    <label id="2" for="Last_Name" class="uname" data-icon="u"  autocomplete="on">Last Name</label>
+                                    <input id="2" name="LastName" required="required" type="text" placeholder="Teller" />
+                                    <button id="1" class="btn-size" type="submit" onclick="required(3)">continue</button>
+                                </p>
+                                <p id="3">
+                                    <label for="Contact_Details" class="uname" >Contact</label>
+                                    <input id="3" name="Contact_Details" required="required" type="number" placeholder="Contact"  autocomplete="on" />
+                                     <button id="1" class="btn-size" type="submit" onclick="required(4)">continue</button>
+                                </p>
+                              <p id="4">
+                                  <label id="4" for="Veh_Reno" class="uname" data-icon="u">Vehicle Number</label>
+                                  <input id="4" name="Veh_Reno" required="required" type="text" placeholder="Vehicle Number"  autocomplete="on" />
+                                    <button id="1" class="btn-size" type="submit" onclick="required(5)">continue</button>
+                              </p>
+
+                              <p id="5">
+
+                                    <label id="5" for="Reason_For_Entry" class="uname"  > Reason for visiting</label>
+                                    <textarea id="number5" name="Reason_For_Entry" required="required" type="textarea" placeholder="Reason for visiting" cols="50"
+                                    rows="3"></textarea>
+                                     <button id="1" class="btn-size" type="submit" onclick="required(6)">continue</button>
+                                </p>
+                                 <p id="6">
+                                    <label id="6" for="TimeIn" class="uname" >Tme-in</label>
+                                    <input id="6" name="TimeIn" required="required" type="time" placeholder="Time-in"  autocomplete="on" />
+                                     <button id="6" class="btn-size" type="submit" onclick="required(7)">continue</button>
+
+
+                                </p>
+                                <p id="7">
+                                    <label id="7" for="ID_Ret" class="uname" data-icon="u">ID_Ret</label>
+                                    <input id="7" name="ID_Ret" required="required" type="number" placeholder="ID_Ret"  autocomplete="on" />
+                                    <button id="6" class="btn-size" type="submit" onclick="required(8)">continue</button>
+
+                                </p>
+                                <p  class="change_link">
+
+                                    Already a member ?
+                                    <a  href="#tologin" class="to_register"> Go and log in </a>
+                                </p>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+      </div>
+    </div>
+    <!-- ############################################################################################################# -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <div id="hp_intro">
+    <!-- ############################################################################################################# -->
+    <ul class="nospace clear">
+      <li class="one_quarter first"><a href="#">
+        <div class="circle push30"><span class="icon-user"></span></div>
+        <h6 class="nospace">Face recognition</h6>
+        </a></li>
+      <li class="one_quarter"><a href="camera/events.html">
+        <div class="circle push30"><span class="icon-picture"></span></div>
+        <h6 class="nospace">picture recognition</h6>
+        </a></li>
+      <li class="one_quarter"><a href="#">
+        <div class="circle push30"><span class="icon-microphone"></span></div>
+        <h6 class="nospace">Speech recognition</h6>
+        </a></li>
+      <li class="one_quarter"><a href="#">
+        <div class="circle push30"><span class="icon-keyboard"></span></div>
+        <h6 class="nospace">Text recognition</h6>
+        </a></li>
+    </ul>
+    <!-- ############################################################################################################# -->
+  </div>
+</div>
+
+
+
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+<script src="https://static.opentok.com/v2/js/opentok.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
